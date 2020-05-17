@@ -1,20 +1,20 @@
 {% set name = "myst-parser" %}
-{% set version = "0.8.0" %}
+{% set version = "0.8.1" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: "18512561b0deaebec5f8d67363c36ed8effe76db285538ad9ad36e4b0851e2bc"
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: ba4c32275ce4d682ab9086d30d88627e3d3f8d3f1ba4fe1dbd837262dc0829eb
 
 build:
   number: 0
   entry_points:
     - myst-benchmark = myst_parser.cli.benchmark:main
-  noarch: "python"
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv "
+  noarch: python
+  script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv '
 
 requirements:
   host:
@@ -33,12 +33,12 @@ test:
     - myst_parser.cli
 
 about:
-  home: "https://github.com/ExecutableBookProject/MyST-Parser"
-  license: "MIT"
-  license_family: "MIT"
-  license_file: "LICENSE"
-  summary: "An extended commonmark compliant parser, with bridges to docutils & sphinx."
-  doc_url: "https://myst-parser.readthedocs.io"
+  home: https://github.com/ExecutableBookProject/MyST-Parser
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE
+  summary: An extended commonmark compliant parser, with bridges to docutils & sphinx.
+  doc_url: https://myst-parser.readthedocs.io
 
 extra:
   recipe-maintainers:
