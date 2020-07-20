@@ -5,7 +5,7 @@ Home: https://github.com/ExecutableBookProject/MyST-Parser
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: An extended commonmark compliant parser, with bridges to docutils & sphinx.
 
