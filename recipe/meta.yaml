@@ -25,7 +25,7 @@ requirements:
     - markdown-it-py ~=0.4.5
     - python >=3.5
     - pyyaml
-    - sphinx >=2,<3
+    - sphinx >=2,<4
 
 test:
   imports:
