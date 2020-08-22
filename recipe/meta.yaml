@@ -1,5 +1,5 @@
 {% set name = "myst-parser" %}
-{% set version = "0.11.2" %}
+{% set version = "0.12.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 62e301ee2b89039bf98606ebbe1a4da0bbae56da7563ee929a9cd134bb901237
+  sha256: ceb2e39ea7d32de1b0151f7426981bbb1e874215e7e4c75d38ceeb0c8d41f44e
 
 build:
   number: 0
@@ -19,10 +19,10 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.5
+    - python >=3.6
   run:
-    - docutils >=0.14
-    - markdown-it-py ~=0.4.9
+    - docutils >=0.15
+    - markdown-it-py ~=0.5.0
     - python >=3.5
     - pyyaml
     - sphinx >=2,<4
