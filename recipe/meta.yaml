@@ -22,8 +22,8 @@ requirements:
     - python >=3.6
   run:
     - docutils >=0.15
-    - markdown-it-py ~=0.5.0
-    - python >=3.5
+    - markdown-it-py ~=0.5.2
+    - python >=3.6
     - pyyaml
     - sphinx >=2,<4
 
