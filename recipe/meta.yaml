@@ -22,12 +22,12 @@ requirements:
     - python >=3.6
   run:
     - docutils >=0.15,<0.18
-    - markdown-it-py ~=1.0
+    - markdown-it-py >=1.0.0,<2.0.0
     - mdit-py-plugins ~=0.2.8
     - jinja2
     - python >=3.6
     - pyyaml
-    - sphinx >=3,<5
+    - sphinx >=3.1,<5
 
 test:
   requires:
