@@ -1,12 +1,11 @@
-{% set name = "myst-parser" %}
 {% set version = "0.15.2" %}
 
 package:
-  name: {{ name|lower }}
+  name: {{ name }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/m/myst-parser/myst-parser-{{ version }}.tar.gz
   sha256: f7f3b2d62db7655cde658eb5d62b2ec2a4631308137bd8d10f296a40d57bbbeb
 
 build:
@@ -22,12 +21,12 @@ requirements:
     - python >=3.6
   run:
     - docutils >=0.15,<0.18
-    - markdown-it-py ~=1.0
-    - mdit-py-plugins ~=0.2.8
+    - markdown-it-py >=1.0,<2.0.0
+    - mdit-py-plugins >=0.2.8,<0.3
     - jinja2
     - python >=3.6
     - pyyaml
-    - sphinx >=3,<5
+    - sphinx >=3.1,<5
 
 test:
   requires:
@@ -50,3 +49,4 @@ extra:
   recipe-maintainers:
     - chrisjsewell
     - choldgraf
+    - conda-forge/jupyter-book
