@@ -119,4 +119,5 @@ Feedstock Maintainers
 
 * [@choldgraf](https://github.com/choldgraf/)
 * [@chrisjsewell](https://github.com/chrisjsewell/)
+* [@conda-forge/jupyter-book](https://github.com/conda-forge/jupyter-book/)
 
