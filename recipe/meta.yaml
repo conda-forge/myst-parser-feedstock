@@ -28,6 +28,7 @@ requirements:
     - python >=3.6
     - pyyaml
     - sphinx >=3.1,<5
+    - typing-extensions
 
 test:
   requires:
