@@ -1,5 +1,5 @@
 {% set name = "myst-parser" %}
-{% set version = "0.16.1" %}
+{% set version = "0.17.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: a6473b9735c8c74959b49b36550725464f4aecc4481340c9a5f9153829191f83
+  sha256: d412347a5cacb77ebc03d7f7ffef050cd61957d46f234313d350e84e24972260
 
 build:
   number: 0
@@ -28,6 +28,7 @@ requirements:
     - python >=3.6
     - pyyaml
     - sphinx >=3.1,<5
+    - typing-extensions
 
 test:
   requires:
