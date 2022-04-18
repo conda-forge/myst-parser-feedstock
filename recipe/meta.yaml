@@ -19,13 +19,13 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.7
   run:
     - docutils >=0.15,<0.18
     - markdown-it-py >=1.0.0,<3.0.0
     - mdit-py-plugins >=0.3.0,<1
     - jinja2
-    - python >=3.6
+    - python >=3.7
     - pyyaml
     - sphinx >=3.1,<5
     - typing-extensions
