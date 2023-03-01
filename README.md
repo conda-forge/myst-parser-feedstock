@@ -1,11 +1,11 @@
-About myst-parser
-=================
+About myst-parser-feedstock
+===========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/myst-parser-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/ExecutableBookProject/MyST-Parser
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/myst-parser-feedstock/blob/main/LICENSE.txt)
 
 Summary: An extended commonmark compliant parser, with bridges to docutils & sphinx.
 
