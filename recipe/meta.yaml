@@ -18,18 +18,17 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python >=3.8
     - pip
     - flit-core >=3.4,<4
   run:
-    - docutils >=0.15,<0.20
-    - markdown-it-py >=1.0.0,<3.0.0
-    - mdit-py-plugins >=0.3.4,<1
+    - docutils >=0.16,<0.21
+    - markdown-it-py >=3.0.0,<4.0.0
+    - mdit-py-plugins >=0.4,<1
     - jinja2
-    - python >=3.7
+    - python >=3.8
     - pyyaml
-    - sphinx >=5,<7
-    - typing-extensions
+    - sphinx >=6,<8
 
 test:
   requires:
