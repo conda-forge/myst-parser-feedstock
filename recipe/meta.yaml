@@ -1,5 +1,5 @@
 {% set name = "myst-parser" %}
-{% set version = "3.0.1" %}
+{% set version = "4.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 88f0cb406cb363b077d176b51c476f62d60604d68a8dcdf4832e080441301a87
+  sha256: 851c9dfb44e36e56d15d05e72f02b80da21a9e0d07cba96baf5e2d476bb91531
 
 build:
   number: 0
