@@ -1,6 +1,6 @@
-{% set python_min = "3.10" %}
+{% set python_min = "3.11" %}
 {% set name = "myst-parser" %}
-{% set version = "4.0.1" %}
+{% set version = "5.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 5cfea715e4f3574138aecbf7d54132296bfd72bb614d31168f48c477a830a7c4
+  sha256: f6f231452c56e8baa662cc352c548158f6a16fcbd6e3800fc594978002b94f3a
 
 build:
   number: 0
@@ -17,19 +17,20 @@ build:
   noarch: python
   script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv '
 
+
 requirements:
   host:
     - python {{ python_min }}
     - pip
     - flit-core >=3.4,<4
   run:
-    - docutils >=0.19,<0.22
-    - markdown-it-py >=3.0.0,<4.0.0
-    - mdit-py-plugins >=0.4.1,<1
+    - docutils >=0.20,<0.23
+    - markdown-it-py >=4.0.0,<4.0.0
+    - mdit-py-plugins >=0.5,<1
     - jinja2
     - python >={{ python_min }}
     - pyyaml
-    - sphinx >=7,<9
+    - sphinx >=8,<10
 
 test:
   requires:
