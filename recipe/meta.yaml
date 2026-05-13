@@ -25,8 +25,8 @@ requirements:
     - flit-core >=3.4,<4
   run:
     - docutils >=0.20,<0.23
-    - markdown-it-py >=4.0.0,<4.1.0
-    - mdit-py-plugins >=0.5,<0.6
+    - markdown-it-py >=4.2.0,<4.3.0
+    - mdit-py-plugins >=0.6.1,<0.7
     - jinja2
     - python >={{ python_min }}
     - pyyaml
