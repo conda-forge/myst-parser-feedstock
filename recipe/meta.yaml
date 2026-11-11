@@ -22,11 +22,11 @@ requirements:
   host:
     - python {{ python_min }}
     - pip
-    - flit-core >=3.4,<4
+    - flit-core >=3.4,<5
   run:
-    - docutils >=0.20,<0.23
+    - docutils >=0.20,<0.24
     - markdown-it-py >=4.2.0,<4.3.0
-    - mdit-py-plugins >=0.6.1,<0.7
+    - mdit-py-plugins >=0.7.0,<0.8
     - jinja2
     - python >={{ python_min }}
     - pyyaml
