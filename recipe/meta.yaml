@@ -1,14 +1,14 @@
 {% set python_min = "3.11" %}
 {% set name = "myst-parser" %}
-{% set version = "5.1.0" %}
+{% set version = "5.2.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: ab69322dc6719dcc7f296479dbb70181b66df6ed315064f92dbc85c0e1bf2f02
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 749cc02793f2be6b984b0b59b1fe33b6ed61d77644499b85db436d0d20117fa4
 
 build:
   number: 0
@@ -22,11 +22,11 @@ requirements:
   host:
     - python {{ python_min }}
     - pip
-    - flit-core >=3.4,<4
+    - flit-core >=3.4,<5
   run:
-    - docutils >=0.20,<0.23
-    - markdown-it-py >=4.2.0,<4.3.0
-    - mdit-py-plugins >=0.6.1,<0.7
+    - docutils >=0.20,<0.24
+    - markdown-it-py >=4.2.0,<5
+    - mdit-py-plugins >=0.7.0,<1
     - jinja2
     - python >={{ python_min }}
     - pyyaml
